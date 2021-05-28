@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <title>408510542_詹博丞 </title>
+
+    <style>
+        ul li{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h3>Hello world!
+    <!-- 作業 navbar表頭元件 -->
+    <p class="h1" style = "font-family: 'Noto Sans TC', sans-serif;"><span class="glyphicon glyphicon-paperclip"></span>&nbsp作業選單</p>
+    <nav class="navbar navbar-default">
+        <div class = "navbar-header">
+            <span href="#" class="navbar-brand">作業列表</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </div>
+        <div id ="mynav" class = "navbar-collapse collapse">
+            <ul class ="navbar-nav nav">
+                <li><a href="./hw2/408510542_詹博丞.html"><span class = "glyphicon glyphicon-thumbs-up"></span>作業二</a></li>
+                <li><a href="./hw3/408510542詹博丞_w5.html"><span class = "glyphicon glyphicon-thumbs-up"></span>作業三</a></li>
+                <li><a href="./hw4/408510542.html"><span class = "glyphicon glyphicon-thumbs-up"></span>作業四</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 照片輪播 -->
+    <div id ="photoCarousel" class = "carousel slide vertical" data-ride = "carousel">
+        <ol class = "carousel-indicators" style = "margin-top:50px">
+            <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#photoCarousel" data-slide-to="1"></li>
+            <li data-target="#photoCarousel" data-slide-to="2"></li>
+            <li data-target="#photoCarousel" data-slide-to="3"></li>
+            <li data-target="#photoCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class = "carousel-inner">
+            <div class = "item active">
+                <img src = "./16da73fb3209d63203d421056670039b.jpg">
+            </div>
+            <div class = "item">
+                <img src = "./4db10bbe57bb7769ea325129b4eb89f7.jpg">
+            </div>
+            <div class = "item">
+                <img src = "./570e37da11feabc19a4c30840bbd7838.jpg">
+            </div>
+            <div class = "item">
+                <img src = "./69afe7831cbfca2a89765a0f0c536f12.jpg">
+            </div>
+            <div class = "item">
+                <img src = "./a7ffee577c127e703e667f1f0d3dbb79.jpg">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+            <span class=“glyphicon glyphicon-chevron-left”></span>
+        </a>
+            <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+            <span class=“glyphicon glyphicon-chevron-right”></span>
+        </a>
+    </div>
 </body>
 </html>

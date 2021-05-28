@@ -1,0 +1,39 @@
+#body{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-style:italic;
+    font-weight: bolder;
+}
+#header{
+    background-color: rgb(167, 167, 243);
+    height: 80px;
+    line-height: 80px;
+}
+#leftbar{
+    background-color: rgb(240, 197, 140);
+    height: 400px;
+    width: 20%;
+    line-height: 400px;
+    float: left;
+}
+#rightbar{
+    background-color: rgb(240, 197, 140);
+    height: 400px;
+    width: 20%;
+    line-height: 400px;
+    float: right;
+}
+#center{
+    background-color: rgb(151, 224, 151);
+    height: 400px;
+    width: 60%;
+    line-height: 400px;
+    float: right;   
+}
+#footer{
+    clear:both;
+    background-color: rgb(167, 167, 243);
+    height: 80px;
+    line-height: 80px;
+}

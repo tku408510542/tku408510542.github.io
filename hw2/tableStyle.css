@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(193, 245, 173);
+}
+table {
+    border-collapse: collapse ;
+    border-style: double;
+    border-color: black;
+}
+#First{
+    background-color: rgb(181, 181, 241);
+}
+#Second{
+    background-color: rgb(166, 245, 225);
+}
+#Third{
+    background-color: rgb(245, 166, 166);
+}
+#Forth{
+    background-color: rgb(216, 166, 245);
+}
+#Fivth{
+    background-color: rgb(250, 146, 186);
+}
