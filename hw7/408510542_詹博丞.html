@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>408510542_詹博丞</title>
+</head>
+<body>
+    輸入你的姓: <input type="text" id="lastName"><br>
+    輸入你的名: <input type="text" id="firstName"><br>
+    <button id ="submit" onclick="submit()">submit</button>
+    <button id ="cancel" onclick="cancel()">cancel</button>
+
+    <script type="text/javascript">
+        var name="";
+        var last = document.getElementById("lastName")
+        var first = document.getElementById("firstName")
+        function cancel(){
+            last.value = "";
+            first.value = " ";
+        }
+
+        function submit(){
+            alert("Hello "+ last.value + " "+ first.value)
+        }
+    </script>
+</body>
+</html>

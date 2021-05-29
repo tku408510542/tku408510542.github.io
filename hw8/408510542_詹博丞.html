@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>408510542_詹博丞</title>
+    <style>
+        * {font-size: large;}
+         input {text-align:right;
+                    width:3em;}
+    </style>
+</head>
+<body>
+    <h3>Input a number to print a tree:<br>
+    <input type ="number" id="count" value="0"><br>
+    <button onclick="createTree()">Submit</button>
+
+    <p id="tree"></p>
+    <script>
+        function createTree(){
+            var target = document.getElementById("count").value;
+            var tree = "";
+            var i;
+            if(target<2){
+                tree += "the number is too small to make a tree"
+            }
+            else{
+                tree += "tree(" + target + ")<br>"
+                for(i=0; i<target; i++){
+                    for(var j=(target-i)*2; j>1; j--){
+                        tree += "&nbsp";
+                    }
+                    for(var j=0; j<i*2+1; j++){
+                        tree += "*";
+                    }
+                    tree +="<br>";
+                }
+                for(i=0; i<target; i++){
+                    for(var j=target*2; j>1; j--)
+                    {
+                        tree += "&nbsp";
+                    }
+                    tree += "*<br>"
+                }
+            }
+            document.getElementById("tree").innerHTML = tree;
+        }
+    </script>
+
+</body>
+</html>
